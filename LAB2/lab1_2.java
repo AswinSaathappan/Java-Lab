@@ -1,6 +1,6 @@
-//1.	To read 3 numbers and find the largest of the three.
+//2.	Given three numbers a, b, and c, find the smallest number
 import java.util.Scanner;
-public class lab1_1
+public class lab1_2
 {
 	public static void main(String[] args) {
 	    Scanner input = new Scanner(System.in);
@@ -10,16 +10,16 @@ public class lab1_1
 	    int b = input.nextInt();
 	    System.out.print("Enter c:");
 	    int c = input.nextInt();
-	    if(a>b && a>c)
+	    if(a<b && a<c)
 	    {
-	        System.out.println(a+" is greater");
+	        System.out.println(a+" is smaller");
 	    }
-	    else if(b>c && b>a)
+	    else if(b<c && b<a)
 	    {
-	        System.out.println(b+" is greater");
+	        System.out.println(b+" is smaller");
 	    }
 	    else{
-	        System.out.println(c+" is greater");
+	        System.out.println(c+" is smaller");
 	    }
 	}
 }
